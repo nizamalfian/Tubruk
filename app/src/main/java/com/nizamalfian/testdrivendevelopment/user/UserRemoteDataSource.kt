@@ -2,8 +2,6 @@ package com.nizamalfian.testdrivendevelopment.user
 
 import com.nizamalfian.testdrivendevelopment.result.Result
 
-class UserRemoteDataSource {
-    fun login(username: String, password: String): Result<UserModel> {
-        return TODO("")
-    }
+interface UserRemoteDataSource {
+    fun login(username: String, password: String): Result<UserModel>
 }

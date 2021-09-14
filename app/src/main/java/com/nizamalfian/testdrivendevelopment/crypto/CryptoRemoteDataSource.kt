@@ -2,10 +2,8 @@ package com.nizamalfian.testdrivendevelopment.crypto
 
 import com.nizamalfian.testdrivendevelopment.result.Result
 
-class CryptoRemoteDataSource {
+interface CryptoRemoteDataSource {
 
-    fun getCrypto(): Result<List<CryptoModel>> {
-        return TODO("")
-    }
+    fun getCrypto(): Result<List<CryptoModel>>
 
 }
